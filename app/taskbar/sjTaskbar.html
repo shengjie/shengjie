@@ -1,0 +1,10 @@
+
+<div class="taskbar">
+    <ul class="bar applications">
+      <li ng-repeat="(name,app) in apps"><a ng-click="open(name)"><i class="{{ app.icon }}" title="{{ app.label }}"></i></a></li>     
+    </ul>
+
+    <ul class="bar notifications">
+      <li><a><i class="fa fa-battery-full" title="Home"></i></a></li>
+    </ul>
+</div>
