@@ -3,7 +3,7 @@
 (function(app) {
 
 	app.config(function(sjSystemProvider){
-		sjSystemProvider.register("blogs", {
+		sjSystemProvider.registerApp("blogs", {
 			title: "Blogs",
 			icon: "fa fa-internet-explorer",
 			templateUrl: "app/app-blogs/main.html",

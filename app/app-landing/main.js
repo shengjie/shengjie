@@ -3,7 +3,7 @@
 (function(app) {
 
 	app.config(function(sjSystemProvider){
-		sjSystemProvider.register("landing", {
+		sjSystemProvider.registerApp("landing", {
 			icon: "fa fa-home",
 			templateUrl: "app/app-landing/main.html",
 			controller: "LandingController"
