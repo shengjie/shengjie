@@ -6,7 +6,13 @@
 			description: "readme",
 			url: "README.md",
 			type: "markdown"
-		});		
+		});
+
+        sjSystemProvider.registerFile("wpf-multithread-downloader.md", {
+            description: "test",
+            url: "docs/wpf-multithread-downloader.md",
+            type: "markdown"
+        })
 	});
 	
 	app.run(function($rootScope, $rootElement, sjSystem) {
@@ -17,14 +23,13 @@
 				sjSystem.launch(parts[1]);
 			}			
 		});
-		
-		
+				
 		$rootScope.$on("sjDesktopStart", function(e) {			
 			sjSystem.openFile("README.md", {
 				x: 10,
 				y: 10,
 				width: sjSystem.desktopWidth * .5,
-				height: sjSystem.desktopHeight - 120
+				height: sjSystem.desktopHeight *.9
 			});
 		});
 	});

@@ -58,7 +58,7 @@
 		};
 	});
 
-	app.directive("sjWindow", function($http, $compile, $controller) {
+	app.directive("sjWindow", function($http, $compile, $controller, sjSystem) {
 		
 		function windowInit(scope, element, attr) {
 			var sjWindow = element.find('.sj-window');						
@@ -69,10 +69,8 @@
 			scope.moving = false;
 			scope.x = g*20;
 			scope.y = g*20;
-			scope.cx = -10;
-			scope.cy = -10;
-			scope.height = 500;
-			scope.width = 480;
+			scope.height = sjSystem.desktopHeight*.9;
+			scope.width = sjSystem.desktopWidth*.5;
 			scope.z = 1;
 			scope.icon = scope.app.icon;
 						
@@ -91,7 +89,7 @@
 					element.remove();
 				}
 			});
-			
+
 			scope.showLoading = function() {
 				contentEl.addClass("loading");			
 			};
@@ -120,6 +118,34 @@
 			};
 		}
 
+        function windowResizeable(scope, element) {
+            var sjWindowBody = element.find(".sj-window-body");
+            var body = angular.element("html");
+
+            var html = '<div class="sj-window-resizer"></div>';
+            var $el = angular.element(html).appendTo(sjWindowBody);
+            scope.dragging = false;
+            
+            $el.on('mousedown', function(e) {
+                scope.dragging = true;
+                scope.draggingX = -e.offsetX;
+				scope.draggingY = -e.offsetY - 34;
+            });
+            
+            body.on("mousemove", function(e) {
+                if(scope.dragging) {
+                    scope.$apply(function() {
+		 				scope.width = e.clientX + scope.draggingX;
+						scope.height = e.clientY + scope.draggingY;
+					});
+                }
+            });
+
+            body.on("mouseup", function() {
+                scope.dragging = false;
+            });
+        }
+
 		
 		function windowDraggable(scope, element) {
 			var sjWindowTitle = element.find(".sj-window-title");
@@ -128,18 +154,16 @@
 			body.on("mousemove", function(e) {
 				if(scope.moving) {
 					scope.$apply(function() {
-		 				scope.x = e.clientX + scope.cx;
-						scope.y = e.clientY + scope.cy;
+		 				scope.x = e.clientX + scope.movingX;
+						scope.y = e.clientY + scope.movingY;
 					});
 				}
 			});
 
 			sjWindowTitle.on('mousedown', function(e) {
 				scope.moving = true;
-				scope.$apply(function() {
-					scope.cx = -e.offsetX;
-					scope.cy = -e.offsetY;
-				});
+				scope.movingX = -e.offsetX;
+				scope.movingY = -e.offsetY;
 			});
 
 			body.on('mouseup', function() {
@@ -161,6 +185,7 @@
 				};
 				windowInit(scope, element, attr);
 				windowDraggable(scope, element);
+                windowResizeable(scope, element)
 	
 				scope.title = scope.app.title || scope.app.name;
 				if(scope.app.templateUrl) {	

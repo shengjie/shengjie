@@ -6,6 +6,8 @@ html {
 
 body {
 	background: #666;
+    background-image: url("desktop.jpg");
+    background-size: cover;
 	color: #fff;
 }
 
