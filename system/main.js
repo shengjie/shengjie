@@ -135,8 +135,8 @@
             body.on("mousemove", function(e) {
                 if(scope.dragging) {
                     scope.$apply(function() {
-		 				scope.width = e.clientX + scope.draggingX;
-						scope.height = e.clientY + scope.draggingY;
+		 				scope.width = e.clientX + scope.draggingX - scope.x;
+						scope.height = e.clientY + scope.draggingY - scope.y;
 					});
                 }
             });
