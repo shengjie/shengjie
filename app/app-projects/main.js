@@ -16,6 +16,7 @@
 		$scope.files = [
 			{
 				name: "WPF Multi-thread downloader",
+                url: "file://wpf-multithread-downloader.md"
 			}
 		];
 	});

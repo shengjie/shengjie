@@ -18,10 +18,17 @@
 	app.run(function($rootScope, $rootElement, sjSystem) {
 		
 		$rootElement.on('click', "a", function(e) {
-			var parts = this.href.split("://");
+            var href = angular.element(this).attr('href');
+            if(!href) return;
+			var parts = href.split("://");
 			if(parts[0]=="app") {
 				sjSystem.launch(parts[1]);
-			}			
+                e.preventDefault();
+			}
+            else if(parts[0]=="file") {
+                sjSystem.openFile(parts[1]);
+                e.preventDefault();
+            }
 		});
 				
 		$rootScope.$on("sjDesktopStart", function(e) {			
