@@ -13,6 +13,12 @@
             url: "docs/wpf-multithread-downloader.md",
             type: "markdown"
         });
+
+        sjSystemProvider.registerFile("[J2EE] Safe driving", {
+            description: "[J2EE] Banchelor graduation project « Agence SafeDriving »",
+            url: "http://shengjieinsight.com/blog/projects/j2ee-banchelor-graduation-project-agence-safe-driving",
+            type: "url"
+        });
        
 	});
 	
