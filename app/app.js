@@ -12,7 +12,8 @@
             description: "test",
             url: "docs/wpf-multithread-downloader.md",
             type: "markdown"
-        })
+        });
+       
 	});
 	
 	app.run(function($rootScope, $rootElement, sjSystem) {
@@ -46,7 +47,8 @@
   	'sj.app-landing',
   	'sj.app-projects',
 	'sj.app-blogs',
-	'sj.app-contacts'
+	'sj.app-contacts',
+    'sj.app-gists'
 ]));
 
 

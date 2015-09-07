@@ -1,0 +1,13 @@
+<ul class="item-list">
+    <li ng-repeat="gist in gists" class="item">
+        <a href="{{gist.html_url}}" target="_blank">
+            <div class="badge">
+                {{gist.updated_at|date}}
+            </div>
+            <div class="title">{{gist.html_url}}</div>
+            <div class="desc">
+                {{gist.description}}
+            </div>
+        </a>
+    </li>
+</ul>

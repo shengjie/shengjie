@@ -4,7 +4,7 @@
 
 	app.config(function(sjSystemProvider){
 		sjSystemProvider.registerApp("projects", {
-			icon: "fa fa-tasks",
+			icon: "fa fa-flag",
 			templateUrl: "app/app-projects/main.html",
 			controller: "ProjectsController"
 		});
@@ -16,6 +16,7 @@
 		$scope.files = [
 			{
 				name: "WPF Multi-thread downloader",
+                icon: "fa fa-file-text-o",
                 url: "file://wpf-multithread-downloader.md"
 			}
 		];

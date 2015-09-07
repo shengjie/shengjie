@@ -1,5 +1,9 @@
-<ul>
-	<li ng-repeat="file in files">
-		<a href="{{file.url}}">{{file.name}}</a>
+<ul class="item-list">
+	<li ng-repeat="file in files" class="item">
+		<a href="{{file.url}}">
+            <i class="icon {{file.icon}}"></i>
+            <div class="title">{{file.name}}</div>            
+            <div class="desc">{{file.description}}</div>
+        </a>
 	</li>
 </ul>

@@ -109,7 +109,7 @@
 				if(scope.app.controller) {
 					var controller = $controller(scope.app.controller,{
 						"$scope": $scope,
-						"sjWindowScope": scope,
+						"sjWindowScope": scope
 					});					
 				}
 
@@ -195,18 +195,26 @@
 						scope.loadHtml(html);
 					});
 				}
+
+                if(scope.app instanceof sjFile) {
+                    if(scope.app.type=="url") {
+                        scope.loadHtml("<iframe src='"+scope.app.url+"' height='100%' width='100%'></iframe>");
+                    }
+
+
+                    if(scope.app.url) {
+                        //open file
+                        scope.showLoading();
+                        $http.get(scope.app.url).success(function(html) {						
+	                        if(scope.app.type=="markdown") {
+		                        html = '<div class="markdown">'+markdown.toHTML(html)+"</div>";
+	                        }
+	                        scope.hideLoading();
+	                        scope.loadHtml(html);
+                        });
+                    }				
+                }
 				
-				if(scope.app.url) {
-					//open file
-					scope.showLoading();
-					$http.get(scope.app.url).success(function(html) {						
-						if(scope.app.type=="markdown") {
-							html = '<div class="markdown">'+markdown.toHTML(html)+"</div>";
-						}
-						scope.hideLoading();
-						scope.loadHtml(html);
-					});
-				}				
 			}
 		};
 	});
