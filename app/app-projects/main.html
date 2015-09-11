@@ -1,9 +1,11 @@
-<ul class="item-list">
-	<li ng-repeat="file in files" class="item">
-		<a href="{{file.url}}">
-            <i class="icon {{file.icon}}"></i>
-            <div class="title">{{file.name}}</div>            
-            <div class="desc">{{file.description}}</div>
-        </a>
-	</li>
-</ul>
+<div>
+    <ul class="item-list">
+        <li ng-repeat="file in repos" class="item">
+            <a href="{{file.html_url}}" target="_blank">
+                <i class="icon fa fa-github"></i>
+                <div class="title"><span ng-show="file.fork">[FORK]</span>{{file.name}}</div>
+                <div class="desc">{{file.description}}</div>
+            </a>
+        </li>
+    </ul>
+</div>

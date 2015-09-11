@@ -10,16 +10,14 @@
 		});
 	});
 
-	app.controller("ProjectsController", function($scope, sjWindowScope){
+	app.controller("ProjectsController", function($scope, $http, sjWindowScope){
 		sjWindowScope.height = 480;
 		sjWindowScope.width = 640;
-		$scope.files = [
-			{
-				name: "WPF Multi-thread downloader",
-                icon: "fa fa-file-text-o",
-                url: "file://wpf-multithread-downloader.md"
-			}
-		];
+		$scope.repos = [];
+		$http.get("https://api.github.com/users/shengjie/repos")
+			.success(function(repos) {
+				$scope.repos = repos;
+			})
 	});
 
 })(angular.module('sj.app-projects', [
