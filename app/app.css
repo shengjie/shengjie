@@ -62,3 +62,10 @@ body {
 .item-list .item .badge {
     float:  right;
 }
+
+#twitter-widget {
+    position: absolute;
+    right:5px;
+    top:5px;
+    height: 200px;
+}

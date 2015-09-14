@@ -1,4 +1,6 @@
 'use strict';
+//Twitter loading
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 (function(app) {
 	app.config(function(sjSystemProvider) {
@@ -23,7 +25,9 @@
 	});
 	
 	app.run(function($rootScope, $rootElement, sjSystem) {
-		
+
+		$rootElement.append('<div id="twitter-widget"><a class="twitter-timeline" href="https://twitter.com/ShengjieYu" data-widget-id="643347041092022272">Tweets de @ShengjieYu</a></div>');
+
 		$rootElement.on('click', "a", function(e) {
             var href = angular.element(this).attr('href');
             if(!href) return;
@@ -38,13 +42,16 @@
             }
 		});
 				
-		$rootScope.$on("sjDesktopStart", function(e) {			
+		$rootScope.$on("sjDesktopStart", function(e) {
+
+
 			sjSystem.openFile("README.md", {
 				x: 10,
 				y: 10,
 				width: sjSystem.desktopWidth * .5,
 				height: sjSystem.desktopHeight *.9
 			});
+
 		});
 	});
 
