@@ -1,7 +1,4 @@
 (function (app) {
-
-
-
     app.config(function (sjSystemProvider) {
         sjSystemProvider.registerApp("mygists", {
             icon: "fa fa-github",
@@ -9,7 +6,6 @@
             controller: "GistsController"
         });
     });
-
 
     app.controller("GistsController", function ($scope, $http) {
         $http.get("https://api.github.com/users/shengjie/gists", { "cache": true })
@@ -21,7 +17,5 @@
                 console.error(error);
                 $scope.error = error;
             });
-
-    })
-
+    });
 })(angular.module("sj.app-gists", ["sj.system"]));

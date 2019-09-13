@@ -1,0 +1,13 @@
+<ul class="item-list">
+    <li ng-repeat="blog in blogs" class="item">
+        <a href="{{blog.url}}" target="_blank">
+            <div class="badge">
+                {{blog.updated_at|date}}
+            </div>
+            <div class="title">{{blog.title}}</div>
+            <div class="desc">
+                {{blog.description}}
+            </div>
+        </a>
+    </li>
+</ul>
