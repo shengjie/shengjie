@@ -37,9 +37,7 @@
       <section class="experience professional">
         <h2><xsl:value-of select="experiences/@title" /></h2>
         <div class="timeline">
-          <div class="timeline">
-            <xsl:apply-templates select="experiences/experience"/>
-          </div>
+          <xsl:apply-templates select="experiences/experience"/>
         </div>
       </section>
     </article>

@@ -134,6 +134,7 @@ a {
   display: inline-block;
   margin: .8mm;
   border-radius: 2mm;
+  border: 0;
   padding: .2em .5em;
 }
 .paper section.skills ul li.level-9 {
@@ -191,7 +192,7 @@ a {
 
 .paper section .timeline .event .desc {
   padding-left: 4cm;
-  font-size: 80%;
+  font-size: 3mm;
 }
 
 .paper section .project {
