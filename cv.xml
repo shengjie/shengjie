@@ -48,7 +48,8 @@
     <skill level="3">Sass</skill>
     <skill level="3">Webpack</skill>
     <skill level="3">Node / NPM</skill>
-    <skill level="3">Nginx</skill>
+    <skill level="2">Nginx</skill>
+    <skill level="2">Redis</skill>
     <skill level="2">Api platform</skill>
     <skill level="2">Algolia</skill>
     <skill level="2">AWS</skill>
@@ -104,10 +105,11 @@
         <project>
           <title>MARKETPLACE : application web symfony 2</title>
           <task>Mise à jour vers nouveau desgin; </task>
+          <task>Caching ESI / applicatif</task>
           <task>Développer et maintenire les outils aide à décision (OAD); </task>
           <task>Amélioration du moteur de recherche; </task>
           <task>Lancement International; </task>
-          <technical>MariaDB, PHP7, Symfony2, Elasticsearch, React, Webpack</technical>
+          <technical>MariaDB, PHP7, Symfony2, Elasticsearch, Redis, React, Webpack</technical>
         </project>
         <project>
           <title>ADMIN : application web symfony 2</title>

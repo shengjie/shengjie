@@ -125,7 +125,7 @@ a {
 .paper section.skills ul li {
   float: left;
   display: inline-block;
-  margin: 1mm;
+  margin: .8mm;
   border-radius: 2mm;
   padding: .2em .5em;
 }
