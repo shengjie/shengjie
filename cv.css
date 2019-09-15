@@ -103,6 +103,13 @@ a {
   margin: .3em 0;
   position: relative;
 }
+.paper section.profile .profile-line img {
+  position: absolute;
+  left: 0;
+  height: 5mm;
+  width: 5mm;
+  top: 0;
+}
 .paper section.profile .profile-line .material-icons {
   position: absolute;
   left: 0;

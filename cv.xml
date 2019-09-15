@@ -21,7 +21,7 @@
       <mail>shengjie.yu89@gmail.com</mail>
     </contact>
     <site>http://shengjie.github.io</site>
-    <linkedin>https://www.linkedin.com/in/shengjieyu/</linkedin>
+    <linkedin name="/in/shengjieyu">https://www.linkedin.com/in/shengjieyu/</linkedin>
     <languages>
       <language level="4">Français</language>
       <language level="4">Anglais</language>

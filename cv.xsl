@@ -85,10 +85,10 @@
         <xsl:value-of select="contact/mail" />
       </div>
       <div class="profile-line site">
-        <i class="material-icons">link</i>
+        <img src="img/linkedin-logo.svg" />
         <a>
-          <xsl:attribute name="href"><xsl:value-of select="site" /></xsl:attribute>
-          <xsl:value-of select="site" />
+          <xsl:attribute name="href"><xsl:value-of select="linkedin" /></xsl:attribute>
+          <xsl:value-of select="linkedin/@name" />
         </a>
       </div>
       <ul class="langs">
