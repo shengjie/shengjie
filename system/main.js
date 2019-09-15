@@ -198,7 +198,8 @@
 
         if (scope.app instanceof sjFile) {
           if (scope.app.type == "url") {
-            scope.loadHtml("<iframe src='" + scope.app.url + "' height='100%' width='100%'></iframe>");
+            window.open(scope.app.url, '_blank');
+            scope.close();
             return;
           }
 

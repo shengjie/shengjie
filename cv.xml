@@ -50,6 +50,7 @@
     <skill level="3">Node / NPM</skill>
     <skill level="2">Nginx</skill>
     <skill level="2">Redis</skill>
+    <skill level="2">RabbitMQ</skill>
     <skill level="2">Api platform</skill>
     <skill level="2">Algolia</skill>
     <skill level="2">AWS</skill>
@@ -59,6 +60,7 @@
     <skill level="1">Python</skill>
     <skill level="1">Go</skill>
     <skill level="1">C# .NET</skill>
+    <skill level="1">Kafka</skill>
   </skills>
 
   <educations title="Formations">

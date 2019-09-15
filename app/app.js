@@ -23,6 +23,13 @@
 			icon: "fa fa-linkedin"
 		});
 
+		sjSystemProvider.registerFile("My CV", {
+			description: "My CV",
+			url: "cv.xml",
+			type: "url",
+			icon: "fa fa-file-o"
+		});
+
 	});
 
 	app.run(function($rootScope, $rootElement, sjSystem) {
