@@ -106,20 +106,20 @@
       <projects>
         <project>
           <title>MARKETPLACE : application web symfony 2</title>
-          <task>Mise à jour vers nouveau desgin; </task>
+          <task>Mise à jour vers nouveau desgin</task>
           <task>Caching ESI / applicatif</task>
-          <task>Développer et maintenire les outils aide à décision (OAD); </task>
-          <task>Amélioration du moteur de recherche; </task>
-          <task>Lancement International; </task>
+          <task>Développer et maintenire les outils aide à décision (OAD)</task>
+          <task>Amélioration du moteur de recherche</task>
+          <task>Lancement International</task>
           <technical>MariaDB, PHP7, Symfony2, Elasticsearch, Redis, React, Webpack</technical>
         </project>
         <project>
           <title>ADMIN : application web symfony 2</title>
-          <task>Mise à jour vers nouveau desgin;</task>
-          <task>Développer et maintenire les outils PIM;</task>
-          <task>Indexation ElasticSearch / Algolia;</task>
-          <task>Ameliorer outils gestion commande,</task>
-          <technical>MariaDB, PHP7, Symfony2, ElasticSearch, React, Webpack</technical>
+          <task>Mise à jour vers nouveau desgin</task>
+          <task>Développer et maintenire les outils PIM</task>
+          <task>Indexation ElasticSearch / Algolia</task>
+          <task>Ameliorer outils gestion commande</task>
+          <technical>MariaDB, PHP7, Symfony2, ElasticSearch, RabbitMQ, React, Webpack</technical>
         </project>
         <project>
           <title>API : api web symfony 4</title>
