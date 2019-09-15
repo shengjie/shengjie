@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+<cv lang="fr">
+
+  <profile>
+    <photo>img/photo.png</photo>
+    <firstName>Shengjie</firstName>
+    <lastName>YU</lastName>
+    <educationTitle>Master d'expert ingénieur informatique</educationTitle>
+    <jobTitle>Ingénieur en développement logiciel</jobTitle>
+    <birthDate>09/08/1989</birthDate>
+    <age>30 ans</age>
+    <origin>Chinois</origin>
+    <address>
+      <line>6 allée de l’Oseraie</line>
+      <city>94260 Fresnes</city>
+      <country>France</country>
+    </address>
+    <contact>
+      <phone>07 80 01 42 89</phone>
+      <mail>shengjie.yu89@gmail.com</mail>
+    </contact>
+    <site>http://shengjie.github.io</site>
+    <linkedin>https://www.linkedin.com/in/shengjieyu/</linkedin>
+    <languages>
+      <language level="4">Français</language>
+      <language level="4">Anglais</language>
+      <language level="5">Chinois</language>
+    </languages>
+    <hobbies>
+      <hobby>Vélo</hobby>
+      <hobby>Natation</hobby>
+      <hobby>Cuisine</hobby>
+      <hobby>Méditation</hobby>
+    </hobbies>
+  </profile>
+
+  <skills title="Compétences">
+    <skill level="9">Volonté d'apprendre</skill>
+    <skill level="3">PHP 7</skill>
+    <skill level="3">Symfony 3/4</skill>
+    <skill level="3">SOLID</skill>
+    <skill level="3">MariaDB / MySQL</skill>
+    <skill level="3">ElasticSearch</skill>
+    <skill level="3">PHPUnit</skill>
+    <skill level="3">React</skill>
+    <skill level="3">TypeScript</skill>
+    <skill level="3">Sass</skill>
+    <skill level="3">Webpack</skill>
+    <skill level="3">Node / NPM</skill>
+    <skill level="3">Nginx</skill>
+    <skill level="2">Api platform</skill>
+    <skill level="2">Algolia</skill>
+    <skill level="2">AWS</skill>
+    <skill level="2">Docker</skill>
+    <skill level="2">Kubernete</skill>
+    <skill level="2">Travis</skill>
+    <skill level="1">Python</skill>
+    <skill level="1">Go</skill>
+    <skill level="1">C# .NET</skill>
+  </skills>
+
+  <educations title="Formations">
+    <education>
+      <time>2011 - 2013</time>
+      <degree>BAC+5</degree>
+      <school>SUPINFO (ECOLE SUPÉRIEURE D’INFORMATIQUE), TOURS, FRANCE</school>
+      <qualification>
+        Diplôme de Master d’expert (Bac+5) en informatique et en système d’informations
+      </qualification>
+    </education>
+    <education>
+      <time>2007 - 2011</time>
+      <degree>BAC+3</degree>
+      <school>SUPINFO (ECOLE SUPÉRIEURE D’INFORMATIQUE), TIANJIN, CHINE</school>
+      <qualification>
+        Diplôme d’International d’ingénierie informatique
+      </qualification>
+    </education>
+    <education>
+      <time>2007 - 2011</time>
+      <degree>Licence</degree>
+      <school>HEBEI UNIVERSITY OF TECHNOLOGY, TIANJIN, CHINE</school>
+      <qualification>
+        Diplôme de licence en informatique
+      </qualification>
+    </education>
+  </educations>
+  <experiences title="Expériences Professionnelle">
+    <experience>
+      <time>
+        10/2015 -
+      </time>
+      <contract>
+        CDI
+      </contract>
+      <company>
+        AGRICONOMIE SAS, IVRY-SUR-SEINE, FRANCE
+      </company>
+      <job>
+        Chef de projet technique
+      </job>
+      <projects>
+        <project>
+          <title>MARKETPLACE : application web symfony 2</title>
+          <task>Mise à jour vers nouveau desgin; </task>
+          <task>Développer et maintenire les outils aide à décision (OAD); </task>
+          <task>Amélioration du moteur de recherche; </task>
+          <task>Lancement International; </task>
+          <technical>MariaDB, PHP7, Symfony2, Elasticsearch, React, Webpack</technical>
+        </project>
+        <project>
+          <title>ADMIN : application web symfony 2</title>
+          <task>Mise à jour vers nouveau desgin;</task>
+          <task>Développer et maintenire les outils PIM;</task>
+          <task>Indexation ElasticSearch / Algolia;</task>
+          <task>Ameliorer outils gestion commande,</task>
+          <technical>MariaDB, PHP7, Symfony2, ElasticSearch, React, Webpack</technical>
+        </project>
+        <project>
+          <title>API : api web symfony 4</title>
+          <task>Développer api REST pour marketplace</task>
+          <technical>MariaDB, PHP7, Symfony4, ApiPlatform</technical>
+        </project>
+      </projects>
+    </experience>
+    <experience>
+      <time>
+        04/2014 - 09/2015
+      </time>
+      <contract>
+        CDI
+      </contract>
+      <company>
+        ILONA SERVICES, NEUILLY-SUR-SEINE, FRANCE
+      </company>
+      <job>
+        Responsable de projet informatique
+      </job>
+      <projects>
+        <project>
+          <title>PROJET DOMELIANE: application web symfony 2</title>
+          <task>Conception / réalisation l’application web fullstack</task>
+          <technical>Symfony2, MySQL, jQuery, LESS, SemanticUI</technical>
+        </project>
+        <project>
+          <title>PROJET ANGELQR: application mobile hybrid</title>
+          <task>L'application mobile (Cordova) /  API REST avec Symfony2 FOSRestBundle / Back-office (AngularJS)</task>
+          <technical>AngularJS, Cordova, IonicFramework, Symfony2, FOSRestBundle, MySQL, NodeJS, PayPal</technical>
+        </project>
+      </projects>
+    </experience>
+    <experience>
+      <time>
+        02/2013 - 02/2014
+      </time>
+      <contract>
+        CDI
+      </contract>
+      <company>
+        EASIMEX, ORSAY, FRANCE
+      </company>
+      <job>
+        Ingénieur conception et développement logiciel
+      </job>
+      <projects>
+        <project>
+          <title>PROJET MARKETLINKERS: application web .NET</title>
+          <technical>WCF REST, EntityFramework, DOJO</technical>
+        </project>
+        <project>
+          <title>PROJET EASIBID: application web .NET</title>
+          <technical>WCF REST, Entity Framework, DOJO</technical>
+        </project>
+        <project>
+          <title>PROJET EASIQUOTE: application windows .NET</title>
+          <technical>WPF, EntityFramework, PDF, OpenStreetMap intégration.</technical>
+        </project>
+      </projects>
+    </experience>
+    <experience>
+      <time>
+        08/2012 - 01/2013
+      </time>
+      <contract>
+        STAGE
+      </contract>
+      <company>
+        CAPITALDATA, PARIS, FRANCE
+      </company>
+      <job>
+        Stage développeur
+      </job>
+      <projects>
+        <project>
+          <title>PROJET EMAIL RETARGETING: Site web php / outils php</title>
+          <technical>HTML, CSS, CGI Pixel ( C++ socket ), PHP CodeIgniter, Crontab</technical>
+        </project>
+      </projects>
+    </experience>
+  </experiences>
+</cv>

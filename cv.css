@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 4mm;
+  font-family: 'Lato', sans-serif
+}
+
+.paper {
+  width: 21cm;
+  height: 29.7cm;
+  background: #fff;
+  display: block;
+  position: relative;
+  padding: .5cm .5cm .5cm 6.5cm;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen {
+  body {
+    background: #888;
+  }
+  .paper {
+    margin:1em auto 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+.paper section {
+  margin-bottom: .5cm;
+}
+.paper section:last-of-type {
+  margin-bottom: 0;
+}
+
+.paper section h2 {
+  font-family: 'Lora';
+  margin: 0 0 .3cm 0;
+}
+
+.paper section.profile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: .5cm;
+  background: #ddd;
+  height: 100%;
+  width: 6cm;
+  margin-bottom: 0;
+}
+
+#doc-link {
+  position: absolute;
+  left: 2cm;
+  bottom: 1cm;
+}
+
+.paper section.profile .name {
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 2;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.paper section.profile .edu-title {
+  text-align: left;
+  font-family: 'Lora', serif;
+}
+
+.paper section.profile .job-title {
+}
+
+.paper section.profile .langs {
+    position: relative;
+}
+.paper section.profile .langs .stars{
+  position: absolute;
+  right: 0;
+}
+
+.paper section.profile .photo {
+  text-align: center;
+}
+.paper section.profile .photo img {
+  width: 3cm;
+  height: 3cm;
+  border-radius: 100%;
+}
+
+.paper section.profile ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.paper section.profile .profile-line {
+  padding-left: 1.5em;
+  margin: .3em 0;
+  position: relative;
+}
+.paper section.profile .profile-line .material-icons {
+  position: absolute;
+  left: 0;
+  font-size: 5mm;
+  top: 0;
+}
+.paper section.profile .langs .stars .material-icons {
+  font-size: 5mm;
+  color: #666;
+}
+
+.paper section.skills ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+  zoom: 1;
+  margin: 0;
+}
+
+.paper section.skills ul li {
+  float: left;
+  display: inline-block;
+  margin: 1mm;
+  border-radius: 2mm;
+  padding: .2em .5em;
+}
+.paper section.skills ul li.level-9 {
+  background: #0d47a1;
+  color: #ffffff;
+}
+.paper section.skills ul li.level-3 {
+  background: #1e88e5;
+  color: #ffffff;
+}
+.paper section.skills ul li.level-2 {
+  background: #42a5f5;
+  color: #ffffff;
+}
+.paper section.skills ul li.level-1 {
+  background: #90caf9;
+  color: #ffffff;
+}
+
+.paper section .timeline {
+}
+
+.paper section .timeline .event {
+  margin-bottom: .3cm;
+  position: relative;
+}
+
+.paper section .timeline .event .badge {
+  position: absolute;
+  top: 1.5em;
+  background: #888;
+  color: #ffffff;
+  border-radius: 2mm;
+  padding: .2em .5em;
+}
+
+.paper section .timeline .event .time {
+  float: left;
+  display: block;
+  width: 4cm;
+  height: 100%;
+}
+
+.paper section .timeline .event .title {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  padding-left: 4cm;
+}
+
+.paper section .timeline .event .sub-title {
+  font-weight: bold;
+  font-size: 90%;
+  padding-left: 4cm;
+}
+
+.paper section .timeline .event .desc {
+  padding-left: 4cm;
+  font-size: 80%;
+}
+
+.paper section .project {
+  margin: .3em 0;
+}
+
+.paper section .project .project-title {
+
+}
+.paper section .project .project-task:before {
+  content: '* ';
+}
+.paper section .project .project-technical:before {
+  content: '* ';
+  font-style: normal;
+}
+.paper section .project .project-technical {
+  font-style: italic;
+}
