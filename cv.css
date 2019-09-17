@@ -55,8 +55,10 @@ a {
 
 #doc-link {
   position: absolute;
-  left: 2cm;
-  bottom: 1cm;
+  left: 0;
+  width: 6cm;
+  text-align: center;
+  bottom: .5cm;
 }
 
 .paper section.profile .name {

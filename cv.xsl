@@ -117,8 +117,8 @@
       </ul>
 
       <div  id="doc-link">
-        <div class="qr-link" data-url="https://bit.ly/2lNevMd"></div>
-        <a href="https://bit.ly/2lNevMd">Voir en-ligne</a>
+        <div class="qr-link" data-url="https://shengjie.github.io/cv.xml"></div>
+        <a href="https://shengjie.github.io/cv.xml">shengjie.github.io/cv.xml</a>
       </div>
     </section>
   </xsl:template>
