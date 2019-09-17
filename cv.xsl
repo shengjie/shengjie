@@ -89,6 +89,13 @@
           <xsl:value-of select="linkedin/@name" />
         </a>
       </div>
+      <div class="profile-line site">
+        <img src="img/github-logo.svg" />
+        <a>
+          <xsl:attribute name="href"><xsl:value-of select="github" /></xsl:attribute>
+          <xsl:value-of select="github/@name" />
+        </a>
+      </div>
       <ul class="langs">
         <xsl:for-each select="languages/language">
           <li>
