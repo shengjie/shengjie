@@ -90,7 +90,7 @@
         </a>
       </div>
       <div class="profile-line site">
-        <img src="img/github-logo.svg" />
+        <img src="img/github-logo.png" />
         <a>
           <xsl:attribute name="href"><xsl:value-of select="github" /></xsl:attribute>
           <xsl:value-of select="github/@name" />
